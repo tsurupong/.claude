@@ -31,9 +31,7 @@
 ## スキル運用
 - 作業開始前に該当スキルを確認して使う(1%でも該当しそうなら読み込む):
   - 開発 = software-development-workflow / バグ修正・機能追加の全般
-  - 記事・発信 = content-workflow / 教材 = teaching-material-workflow
-  - セミナー・イベント = seminar-event-design-workflow
-  - 事業判断・壁打ち = business-strategy-workflow
+  - 記事・発信 = content-workflow
   - 環境診断 = claude-code-environment-audit
   - 迷ったら = operating-principles と task-execution-rules
 - 完了前に必ず quality-checklist を通す。
