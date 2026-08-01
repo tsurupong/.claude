@@ -11,8 +11,6 @@
 !/agents/
 !/hooks/
 !/output-styles/
-!/plans/
-!/execution-pack/
 
 # 許可ディレクトリ内でも除外するもの
 **/node_modules/
