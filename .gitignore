@@ -1,0 +1,21 @@
+# 既定で全て無視し、管理したいものだけ許可する(ホワイトリスト方式)
+/*
+
+# 管理対象
+!/.gitignore
+!/LICENSE
+!/CLAUDE.md
+!/settings.json
+!/rules/
+!/skills/
+!/agents/
+!/hooks/
+!/output-styles/
+!/plans/
+!/execution-pack/
+
+# 許可ディレクトリ内でも除外するもの
+**/node_modules/
+**/.venv/
+**/__pycache__/
+*.lock

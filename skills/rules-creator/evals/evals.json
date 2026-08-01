@@ -1,0 +1,26 @@
+{
+  "skill_name": "rules-creator",
+  "evals": [
+    {
+      "id": 0,
+      "name": "path-scoped-project-rule",
+      "prompt": "このプロジェクトで、src配下のReactコンポーネント(.tsx)ではCSS Modulesを禁止してTailwindのユーティリティクラスだけを使うことをルールにして。作業ディレクトリ: <proj-a>",
+      "expected_output": ".claude/rules/ 配下に paths frontmatter 付き(src/**/*.tsx 等)の新規ルールファイルが作成される。CLAUDE.md 直書きではない。",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "merge-into-existing-rule",
+      "prompt": "テストのルールを追加したい。「テストファイルは対象と同じディレクトリに置く」「カバレッジ80%以上を維持」を毎回守ってほしい。作業ディレクトリ: <proj-b>",
+      "expected_output": "既存の .claude/rules/testing.md を発見して追記する。重複ファイルを新規作成しない。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "hook-not-rule",
+      "prompt": "git push する前に必ず npm test を実行するようにルール化して。作業ディレクトリ: <proj-a>",
+      "expected_output": "強制実行なので rules ではなく hooks (PreToolUse) が適切だと説明・提案する。単にmdファイルを作って終わりにしない。",
+      "files": []
+    }
+  ]
+}

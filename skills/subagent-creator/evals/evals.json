@@ -1,0 +1,19 @@
+{
+  "skill_name": "subagent-creator",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "create-test-runner-agent",
+      "prompt": "テストスイートを実行して失敗したテストだけをエラーメッセージ付きで報告してくれるサブエージェントを作ってほしい。コードは直させたくない。出力先ディレクトリ: <OUTDIR>/agents/",
+      "expected_output": "name/description必須、descriptionに用途とトリガー、toolsが読み取り+テスト実行Bashに限定、本文に手順と出力形式、日本語出力指定",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "harden-existing-agent",
+      "prompt": "<OUTDIR>/agents/doc-writer.md にあるサブエージェント定義を改善して:レビュー観点をまたいで学習が蓄積されるようにして、Bashは使わせないで。あと委譲されやすいdescriptionにして。",
+      "expected_output": "memory:projectの追加、Bash除外(toolsから削除またはdisallowedTools)、descriptionに使用タイミング追記",
+      "files": ["agents/doc-writer.md"]
+    }
+  ]
+}

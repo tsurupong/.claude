@@ -1,0 +1,11 @@
+{
+  "skill_name": "review-team",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "<sandbox> の未コミットの変更をレビューして",
+      "expected_output": "average の len+1 バグと calc_expr の eval() 危険性を file:line 付きで指摘。ファイルは一切変更しない。review-orchestrator / code-reviewer / security-reviewer への委譲または指名がある",
+      "files": ["sandbox: calc プロジェクト(未コミット差分にバグ+eval() 使用)"]
+    }
+  ]
+}

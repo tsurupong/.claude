@@ -1,0 +1,11 @@
+{
+  "skill_name": "fix-team",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "<sandbox>/ のテストが落ちてる。直して",
+      "expected_output": "test_calc.py を改変せず calc.py の average を修正し、テスト全緑の実行結果を貼り、原因→修正→検証の順で報告。担当(test-fixer 等)への委譲または指名がある",
+      "files": ["sandbox: calc プロジェクト(test_average が失敗する状態)"]
+    }
+  ]
+}

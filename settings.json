@@ -1,0 +1,132 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "60"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(wc:*)",
+      "Bash(jq:*)",
+      "Bash(du:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(sha256sum:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pnpm test:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx jest:*)",
+      "Bash(npx vitest:*)",
+      "Bash(cargo check:*)",
+      "Bash(cargo test:*)",
+      "Bash(cargo build:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(python3 -m pytest:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -fr:*)",
+      "Bash(rm -Rf:*)",
+      "Bash(dd:*)",
+      "Bash(chmod 777:*)",
+      "Bash(chmod -R 777:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(sudo:*)",
+      "Bash(nc:*)",
+      "Bash(netcat:*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/id_rsa)",
+      "Read(**/id_rsa.pub)",
+      "Read(**/id_ed25519)",
+      "Read(**/id_ed25519.pub)",
+      "Read(**/credentials.*)",
+      "Read(**/secrets/**)",
+      "Read(~/.claude/.credentials.json)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(yarn add:*)",
+      "Bash(pip install:*)",
+      "Bash(cargo install:*)",
+      "Bash(sam deploy:*)",
+      "Bash(cdk deploy:*)",
+      "Bash(aws s3 rm:*)",
+      "Bash(aws cloudformation delete-stack:*)"
+    ]
+  },
+  "model": "claude-fable-5[1m]",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "context7@claude-plugins-official": false,
+    "remember@claude-plugins-official": true,
+    "hookify@claude-plugins-official": false,
+    "ralph-loop@claude-plugins-official": true,
+    "aws-core@claude-plugins-official": false,
+    "aws-serverless@claude-plugins-official": false,
+    "deploy-on-aws@claude-plugins-official": false,
+    "frontend-design@claude-plugins-official": false,
+    "playwright@claude-plugins-official": false,
+    "feature-dev@claude-plugins-official": false,
+    "security-guidance@claude-plugins-official": true,
+    "explanatory-output-style@claude-plugins-official": false,
+    "sourcegraph@claude-plugins-official": false,
+    "exa@claude-plugins-official": false,
+    "plugin-dev@claude-plugins-official": false,
+    "mcp-server-dev@claude-plugins-official": false,
+    "ecc@ecc": false,
+    "agent-sops@agent-sop": false,
+    "code-review@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
+    "code-simplifier@claude-plugins-official": false,
+    "chrome-devtools-mcp@claude-plugins-official": false,
+    "coderabbit@claude-plugins-official": false,
+    "atomic-agents@claude-plugins-official": false,
+    "desktop-commander@claude-plugins-official": false,
+    "aws-dev-toolkit@claude-plugins-official": false,
+    "github@claude-plugins-official": false,
+    "python-development@claude-code-workflows": false
+  },
+  "extraKnownMarketplaces": {
+    "ecc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/affaan-m/ECC.git"
+      }
+    },
+    "agent-sop": {
+      "source": {
+        "source": "github",
+        "repo": "strands-agents/agent-sop"
+      }
+    },
+    "claude-code-workflows": {
+      "source": {
+        "source": "github",
+        "repo": "wshobson/agents"
+      }
+    }
+  },
+  "effortLevel": "low",
+  "autoUpdatesChannel": "latest",
+  "skipWorkflowUsageWarning": true,
+  "theme": "dark-ansi",
+  "autoCompactEnabled": true,
+  "ENABLE_TOOL_SEARCH": "true"
+}

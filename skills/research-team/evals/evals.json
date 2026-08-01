@@ -1,0 +1,11 @@
+{
+  "skill_name": "research-team",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "<sandbox> の構成と、品質・安全面で問題になり得る箇所を調査して。修正はしないで",
+      "expected_output": "read-only を維持し、構成(関数一覧・テスト)と少なくとも2件のリスク(eval() / average バグ / ゼロ除算)を根拠付きで報告。小規模対象のため『委譲せず直接読む』判断の明示、または適切な委譲のいずれか",
+      "files": ["sandbox: calc プロジェクト"]
+    }
+  ]
+}

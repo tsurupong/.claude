@@ -1,0 +1,21 @@
+{
+  "skill_name": "command-creator",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "commit-msg-manual-command",
+      "prompt": "git の未コミット差分を読んでコミットメッセージ案を3つ出す /commit-msg というスラッシュコマンドを作って。自分が手で打った時だけ動いてほしい(Claudeが勝手に起動しないように)。個人用として全プロジェクトで使いたい。",
+      "expected_output": "~/.claude/skills/commit-msg/SKILL.md 相当のファイル。disable-model-invocation: true、!`git diff` による動的コンテキスト注入を使用",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "eval_name": "fix-issue-args-command",
+      "prompt": "issue 番号を引数で渡すとその GitHub issue を読んで修正してくれるコマンドをこのプロジェクトに追加して。/fix-issue 123 みたいに使いたい。",
+      "expected_output": ".claude/skills/fix-issue/SKILL.md 相当。$ARGUMENTS で引数を受け、argument-hint あり、プロジェクト配置",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}
